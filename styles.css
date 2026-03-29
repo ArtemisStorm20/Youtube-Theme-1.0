@@ -1,4 +1,5 @@
-/* Pinterest-achtige pastelstijl */
+/* YouTube Blush Theme */
+
 :root {
 	--blush:      #f5d5d5;
 	--rose:       #e8a5a5;
@@ -12,101 +13,103 @@
 	--text-light: #a68b8b;
 }
 
-body {
-	background: var(--petal);
-	color: var(--text);
+body, ytd-app {
+	background: var(--cream) !important;
+	color: var(--text) !important;
 	font-family: 'Segoe UI', 'Arial', sans-serif;
-	margin: 0;
-	padding: 0;
 }
 
-.header, .navbar {
-	background: var(--blush);
-	color: var(--text);
-	padding: 1rem 2rem;
-	border-bottom: 2px solid var(--rose);
-	box-shadow: 0 2px 8px var(--cream);
+/* Header */
+ytd-masthead, #masthead-container, #container.ytd-masthead {
+	background: var(--petal) !important;
+	box-shadow: 0 2px 8px var(--blush);
+	border-bottom: 2px solid var(--rose-deep);
 }
 
-.search-bar {
-	background: var(--cream);
-	border: 1px solid var(--rose);
-	border-radius: 2rem;
-	padding: 0.5rem 1.5rem;
-	color: var(--text);
-	width: 100%;
-	max-width: 500px;
-	margin: 1rem auto;
-	display: block;
-	font-size: 1rem;
+/* Sidebar */
+ytd-guide-renderer, #guide-content {
+	background: var(--petal) !important;
+	color: var(--text) !important;
+	border-right: 1px solid var(--petal);
 }
 
-.menu {
-	display: flex;
-	gap: 1.5rem;
-	padding: 1rem 2rem;
-	background: var(--white);
-	border-bottom: 1px solid var(--sand);
+/* Video grid background */
+ytd-browse, ytd-rich-grid-renderer, ytd-section-list-renderer {
+	background: var(--cream) !important;
 }
 
-.menu a, .menu button {
-	color: var(--text-light);
-	background: none;
-	border: none;
-	font-size: 1rem;
-	padding: 0.5rem 1rem;
-	border-radius: 1rem;
-	transition: background 0.2s, color 0.2s;
-	cursor: pointer;
-}
-
-.menu a.active, .menu a:hover, .menu button.active, .menu button:hover {
-	background: var(--rose);
-	color: var(--white);
-}
-
-.content-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-	gap: 2rem;
-	padding: 2rem;
-	background: var(--petal);
-}
-
-.card {
-	background: var(--white);
-	border-radius: 1.5rem;
-	box-shadow: 0 4px 16px var(--beige);
-	padding: 1rem;
+/* Video cards */
+ytd-rich-item-renderer, ytd-video-renderer, ytd-grid-video-renderer {
+	background: var(--white) !important;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px 0 var(--beige);
+	margin-bottom: 16px;
 	transition: box-shadow 0.2s;
-	border: 1px solid var(--sand);
+}
+ytd-rich-item-renderer:hover, ytd-video-renderer:hover, ytd-grid-video-renderer:hover {
+	box-shadow: 0 4px 16px 0 var(--rose);
 }
 
-.card:hover {
-	box-shadow: 0 8px 24px var(--rose-deep);
-	border-color: var(--rose);
+/* Video titles */
+a#video-title, .title, .yt-simple-endpoint.style-scope.ytd-video-renderer {
+	color: var(--text) !important;
+	font-weight: 600;
 }
 
+/* Channel names and meta info */
+.ytd-channel-name, .metadata-line, .ytd-video-meta-block {
+	color: var(--text-light) !important;
+}
+
+/* Buttons */
+button, ytd-button-renderer, .yt-spec-button-shape-next {
+	background: var(--rose) !important;
+	color: var(--white) !important;
+	border-radius: 8px !important;
+	border: none !important;
+	transition: background 0.2s;
+}
+button:hover, ytd-button-renderer:hover, .yt-spec-button-shape-next:hover {
+	background: var(--rose-deep) !important;
+}
+
+/* Search bar */
+#search-input, input#search {
+	background: var(--petal) !important;
+	color: var(--text) !important;
+	border: 1px solid var(--rose);
+	border-radius: 8px;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
-	background: var(--cream);
+	width: 12px;
+	background: var(--petal);
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--rose);
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
-button, input, select, textarea {
-	font-family: inherit;
-	color: var(--text);
-	background: var(--cream);
-	border: 1px solid var(--sand);
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-	transition: border 0.2s;
+/* Comments section */
+ytd-comments, #comments {
+	background: var(--petal) !important;
+	border-radius: 12px;
+	padding: 16px;
 }
 
-button:hover, input:focus, select:focus, textarea:focus {
-	border-color: var(--rose);
-	outline: none;
+/* Footer */
+#footer-container, ytd-mini-guide-renderer {
+	background: var(--sand) !important;
+	color: var(--text-light) !important;
+}
+
+/* Miscellaneous */
+a, .yt-simple-endpoint {
+	color: var(--rose-deep) !important;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+a:hover, .yt-simple-endpoint:hover {
+	color: var(--rose) !important;
 }
