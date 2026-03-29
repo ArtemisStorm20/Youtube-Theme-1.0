@@ -1,0 +1,112 @@
+/* Pinterest-achtige pastelstijl */
+:root {
+	--blush:      #f5d5d5;
+	--rose:       #e8a5a5;
+	--rose-deep:  #c97b7b;
+	--petal:      #fce8e8;
+	--cream:      #fdf6f0;
+	--beige:      #f0e6d8;
+	--sand:       #ddd0bf;
+	--white:      #fffcfa;
+	--text:       #6b4f4f;
+	--text-light: #a68b8b;
+}
+
+body {
+	background: var(--petal);
+	color: var(--text);
+	font-family: 'Segoe UI', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header, .navbar {
+	background: var(--blush);
+	color: var(--text);
+	padding: 1rem 2rem;
+	border-bottom: 2px solid var(--rose);
+	box-shadow: 0 2px 8px var(--cream);
+}
+
+.search-bar {
+	background: var(--cream);
+	border: 1px solid var(--rose);
+	border-radius: 2rem;
+	padding: 0.5rem 1.5rem;
+	color: var(--text);
+	width: 100%;
+	max-width: 500px;
+	margin: 1rem auto;
+	display: block;
+	font-size: 1rem;
+}
+
+.menu {
+	display: flex;
+	gap: 1.5rem;
+	padding: 1rem 2rem;
+	background: var(--white);
+	border-bottom: 1px solid var(--sand);
+}
+
+.menu a, .menu button {
+	color: var(--text-light);
+	background: none;
+	border: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	transition: background 0.2s, color 0.2s;
+	cursor: pointer;
+}
+
+.menu a.active, .menu a:hover, .menu button.active, .menu button:hover {
+	background: var(--rose);
+	color: var(--white);
+}
+
+.content-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
+	background: var(--petal);
+}
+
+.card {
+	background: var(--white);
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 16px var(--beige);
+	padding: 1rem;
+	transition: box-shadow 0.2s;
+	border: 1px solid var(--sand);
+}
+
+.card:hover {
+	box-shadow: 0 8px 24px var(--rose-deep);
+	border-color: var(--rose);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--rose);
+	border-radius: 5px;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	color: var(--text);
+	background: var(--cream);
+	border: 1px solid var(--sand);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	transition: border 0.2s;
+}
+
+button:hover, input:focus, select:focus, textarea:focus {
+	border-color: var(--rose);
+	outline: none;
+}
