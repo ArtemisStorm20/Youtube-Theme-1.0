@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Theme Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { min-width: 250px; min-height: 150px; padding: 16px; font-family: Arial, sans-serif; background: #181818; color: #fff; }
+        h1 { font-size: 1.2em; margin-bottom: 12px; }
+        button { background: #ff0000; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 1em; }
+        button:hover { background: #cc0000; }
+    </style>
+</head>
+<body>
+    <h1>Youtube Theme Extensie</h1>
+    <p>Kies een thema voor Youtube:</p>
+    <button id="toggle-theme">Wissel Thema</button>
+    <script>
+        document.getElementById('toggle-theme').addEventListener('click', function() {
+            chrome.runtime.sendMessage({ action: 'toggleTheme' });
+            window.close();
+        });
+    </script>
+</body>
+</html>

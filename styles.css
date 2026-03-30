@@ -28,7 +28,7 @@ ytd-masthead, #masthead-container, #container.ytd-masthead {
 /* Sidebar */
 ytd-guide-renderer, #guide-content {
 	background: var(--petal) !important;
-	color: var(--text) !important;
+	color: var(--text-light) !important;
 	border-right: 1px solid var(--petal);
 }
 
