@@ -14,7 +14,7 @@
 }
 
 body, ytd-app {
-	background: var(--cream) !important;
+	background: var(--petal) !important;
 	color: var(--text) !important;
 	font-family: 'Segoe UI', 'Arial', sans-serif;
 }
@@ -100,7 +100,7 @@ ytd-comments, #comments {
 
 /* Footer */
 #footer-container, ytd-mini-guide-renderer {
-	background: var(--sand) !important;
+	background: var(--petal) !important;
 	color: var(--text-light) !important;
 }
 
