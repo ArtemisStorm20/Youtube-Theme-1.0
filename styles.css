@@ -21,9 +21,8 @@ body, ytd-app {
 
 /* Header */
 ytd-masthead, #masthead-container, #container.ytd-masthead {
-	background: var(--petal) !important;
-	box-shadow: 0 2px 8px var(--blush);
-	border-bottom: 2px solid var(--blush);
+	background: var(--white) !important;
+	border-bottom: 0.5px solid var(--blush) !important;
 }
 
 /* Sidebar */
@@ -84,7 +83,7 @@ button:hover, ytd-button-renderer:hover, .yt-spec-button-shape-next:hover {
 /* Scrollbar */
 ::-webkit-scrollbar {
 	width: 12px;
-	background: var(--petal);
+	background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--rose);
@@ -100,8 +99,9 @@ ytd-comments, #comments {
 
 /* Footer */
 #footer-container, ytd-mini-guide-renderer {
-	background: var(--petal) !important;
+	background: var(--white) !important;
 	color: var(--text-light) !important;
+	  border: 1.5px solid var(--blush) !important;
 }
 
 /* Miscellaneous */

@@ -5,10 +5,18 @@
   "description": "Pastel blush kleuren voor YouTube.",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*",
-      "https://www.youtube.com/?gl=NL&hl=nl&app=desktop"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.youtube.com/?gl=NL&hl=nl&app=desktop"
+      ],
       "css": ["styles.css"],
       "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["https://www.youtube.com/*"]
     }
   ]
 }
