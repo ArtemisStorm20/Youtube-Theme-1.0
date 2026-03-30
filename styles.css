@@ -113,3 +113,10 @@ a, .yt-simple-endpoint {
 a:hover, .yt-simple-endpoint:hover {
 	color: var(--petal) !important;
 }
+
+/* Iconen dezelfde kleur als tekst-licht */
+svg, .icon, [class*="icon"], [class*="Icon"] {
+    color: var(--text-light) !important;
+    fill: var(--text-light) !important;
+    stroke: var(--text-light) !important;
+}
