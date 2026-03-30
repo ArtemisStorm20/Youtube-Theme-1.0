@@ -63,7 +63,7 @@ a#video-title, .title, .yt-simple-endpoint.style-scope.ytd-video-renderer {
 
 /* Buttons */
 button, ytd-button-renderer, .yt-spec-button-shape-next {
-	background: var(--rose) !important;
+	background: var(--blush) !important;
 	color: var(--white) !important;
 	border-radius: 8px !important;
 	border: none !important;
