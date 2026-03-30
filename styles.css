@@ -23,7 +23,7 @@ body, ytd-app {
 ytd-masthead, #masthead-container, #container.ytd-masthead {
 	background: var(--petal) !important;
 	box-shadow: 0 2px 8px var(--blush);
-	border-bottom: 2px solid var(--rose-deep);
+	border-bottom: 2px solid var(--blush);
 }
 
 /* Sidebar */
@@ -70,7 +70,7 @@ button, ytd-button-renderer, .yt-spec-button-shape-next {
 	transition: background 0.2s;
 }
 button:hover, ytd-button-renderer:hover, .yt-spec-button-shape-next:hover {
-	background: var(--rose-deep) !important;
+	background: var(--blush) !important;
 }
 
 /* Search bar */
@@ -106,10 +106,10 @@ ytd-comments, #comments {
 
 /* Miscellaneous */
 a, .yt-simple-endpoint {
-	color: var(--rose-deep) !important;
+	color: var(--rose) !important;
 	text-decoration: none;
 	transition: color 0.2s;
 }
 a:hover, .yt-simple-endpoint:hover {
-	color: var(--rose) !important;
+	color: var(--petal) !important;
 }
