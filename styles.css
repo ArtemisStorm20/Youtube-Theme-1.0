@@ -106,7 +106,7 @@ ytd-comments, #comments {
 
 /* Miscellaneous */
 a, .yt-simple-endpoint {
-	color: var(--rose) !important;
+	color: var(--text-light) !important;
 	text-decoration: none;
 	transition: color 0.2s;
 }
